@@ -1,0 +1,4 @@
+Flask==3.0.3
+yt-dlp
+ffmpeg-python
+flask-cors
