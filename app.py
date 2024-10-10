@@ -36,6 +36,7 @@ def download_audio():
         'writethumbnail': True,
         'writeinfojson': True,
         'noplaylist': True,
+        'cookiefile': 'cookies.txt'
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -118,4 +119,4 @@ def search_videos():
     return jsonify(results)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
